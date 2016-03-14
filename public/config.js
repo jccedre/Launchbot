@@ -61,8 +61,8 @@ var launchbotConfig = {
   plugins: {
     weather: {
       enabled: true,
-      zipCode: 10439,
-      country: 'Germany',
+      zipCode: 21230,
+      country: 'United States',
       useCelcius: true
     }
   }
