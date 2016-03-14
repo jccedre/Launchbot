@@ -73,7 +73,7 @@
     var setOnClick = '';
 
     for (var i in item) {
-      allItems += outputLinks(item[i]);
+      allItems += outputLinks2(item[i]);
       if (setName !== 'favs') {
         setOnClick += 'window.open("' + item[i] + '");';
       }
@@ -109,6 +109,13 @@
   function outputLinks(item) {
     return '<a href=\"' + item + '\" title=\"' + item + '\" target=\"' + lb.options.linkTarget + '\"><img src=\"' + lb.options.faviconService + item + '\" width=\"' + lb.options.faviconSize + '\" height=\"' + lb.options.faviconSize + '\"><\/a> ';
   }
+      
+      
+  //Link style with icon
+  function outputLinks2(item) {
+    return '<a href=\"' + item + '\" title=\"' + item + '\" target=\"' + lb.options.linkTarget + '\"><img src=\"' + lb.options.image + item + '\" width=\"' + lb.options2.size + '\" height=\"' + lb.options2.size + '\"><\/a> ';
+  }
+
 
   // Output style of each set list
   function createSetList() {
@@ -132,7 +139,7 @@
   // Weather Forecast
   var weather = lb.plugins.weather;
   if (weather.enabled) {
-    if (weather.useCelcius === true) {
+    if (weather.useCelcius === false) {
       var weatherUnit = 'c';
     } else {
       var weatherUnit = 'f';

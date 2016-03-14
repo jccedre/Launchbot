@@ -7,10 +7,10 @@ var launchbotConfig = {
     {
       name: 'Daily',
       items: [
-        'http://mymorningroutine.com',
-        'http://nytimes.com',
-        'http://www.newyorker.com',
-        'https://news.ycombinator.com',
+        'http://learn.digitalharbor.org',
+        'http://youth.digitalharbor.org',
+        'https://mail.google.com',
+        'https://drive.google.com',
         'http://reddit.com',
         'http://onethingwell.org',
         'http://macstories.net',
@@ -22,7 +22,7 @@ var launchbotConfig = {
 
     // Second example set
     {
-      name: 'Travel',
+      name: 'Members',
       items: [
         'http://michaelxander.com/static/nyc-cams.html',
         'http://skyscanner.de',
@@ -38,8 +38,8 @@ var launchbotConfig = {
 
   // For favorites bar, enter absolute URIs 'http://', 'https://', 'ftp://' …
   favs: [
-    'http://michaelxander.com',
-    'http://mymorningroutine.com',
+    'http://digitalharbor.org',
+    'https://news.ycombinator.com',
     'https://mail.google.com',
     'https://drive.google.com',
     'https://app.asana.com',
@@ -65,5 +65,18 @@ var launchbotConfig = {
       country: 'United States',
       useCelcius: true
     }
+  },
+    
+ options2: {
+    size: 60,
+   //add image paths for each image icon
+    //the for loop in the getLinks function will select the image
+     //in order from 0,1,2,3,...
+     image: [
+        ''
+        
+        
+    ],
+    linkTarget: '_blank'
   }
 };
