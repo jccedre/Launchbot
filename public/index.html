@@ -111,9 +111,23 @@
   }
       
       
+      
   //Link style with icon
   function outputLinks2(item) {
-    return '<a href=\"' + item + '\" title=\"' + item + '\" target=\"' + lb.options.linkTarget + '\"><img src=\"' + lb.options.image + item + '\" width=\"' + lb.options2.size + '\" height=\"' + lb.options2.size + '\"><\/a> ';
+      
+      var output = '';
+      
+      
+         for(var i in lb.images){ 
+         output ='<a href=\"' + item + '\" title=\"' + item + '\" target=\"' + lb.options2.linkTarget + '\"><img src=\"' + lb.images[]+ '\" width=\"' + lb.options2.size + '\" height=\"' + lb.options2.size + '\"><\/a> '
+         
+         return output;
+             
+       
+         }
+      
+      
+  
   }
 
 

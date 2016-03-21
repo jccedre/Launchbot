@@ -50,6 +50,14 @@ var launchbotConfig = {
     'http://onethingwell.org',
     'http://brettterpstra.com'
   ],
+    
+    images: [
+        'images/DHF-Logo-Learn.png',
+        'images/DHF-Logo.png',
+        'images/New_Logo_Gmail.png'
+        
+        
+    ],
 
   // Optional settings
   options: {
@@ -72,11 +80,18 @@ var launchbotConfig = {
    //add image paths for each image icon
     //the for loop in the getLinks function will select the image
      //in order from 0,1,2,3,...
+     /*image: [
+        '/images/DHF-Logo.png',
+         '/images/DHF-Logo-Learn.png'
+    
+        
+    ],*/
+     
      image: [
-        ''
-        
-        
-    ],
+         'images/DHF-Logo.png',
+         'images/DHF-Logo-Learn.png'
+             
+            ],
     linkTarget: '_blank'
   }
 };
