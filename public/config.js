@@ -11,12 +11,7 @@ var launchbotConfig = {
         'http://youth.digitalharbor.org',
         'https://mail.google.com',
         'https://drive.google.com',
-        'http://reddit.com',
-        'http://onethingwell.org',
-        'http://macstories.net',
-        'http://stadt-bremerhaven.de',
-        'http://brettterpstra.com',
-        'http://hypetrak.com'
+        'http://www.fabhive.buzz/megalab/'
       ]
     },
 
@@ -54,8 +49,9 @@ var launchbotConfig = {
     images: [
         'images/DHF-Logo-Learn.png',
         'images/DHF-Logo.png',
-        'images/New_Logo_Gmail.png'
-        
+        'images/New_Logo_Gmail.png',
+        'images/Logo_of_Google_Drive.png',
+        'images/FabHive_art-logo.png'
         
     ],
 
