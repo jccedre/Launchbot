@@ -73,7 +73,7 @@
     var setOnClick = '';
 
     for (var i in item) {
-      allItems += outputLinks2(item[i]);
+      allItems += outputLinks2(item[i], i);
       if (setName !== 'favs') {
         setOnClick += 'window.open("' + item[i] + '");';
       }
@@ -113,15 +113,16 @@
       
       
   //Link style with icon
-  function outputLinks2(item) {
+  function outputLinks2(item, pos) {
       
       var output = '';
       
-      
-         for(var i in lb.images){ 
-         output ='<a href=\"' + item + '\" title=\"' + item + '\" target=\"' + lb.options2.linkTarget + '\"><img src=\"' + lb.images[]+ '\" width=\"' + lb.options2.size + '\" height=\"' + lb.options2.size + '\"><\/a> '
+         for(var i = 0; i < 3; i++){ 
+                      
+        return '<a href=\"' + item + '\" title=\"' + item + '\" target=\"' + lb.options2.linkTarget + '\"><img src=\"' + lb.images[pos]+ '\" width=\"' + lb.options2.size + '\" height=\"' + lb.options2.size + '\"><\/a> ';
          
-         return output;
+       
+         //return output;
              
        
          }
